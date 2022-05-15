@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Details.</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center">Movies Details.</h1>
+    <hr />
+    <div class="employee-form">
+      <form
+        onsubmit="event.preventDefault();onFormSubmit();"
+        autocomplete="off"
+      >
+        <div class="flx">
+          <div>
+            <label>Movies Name*</label
+            ><label class="validation-error hide" id="movieTitleValidationError"
+              >This field is required.</label
+            >
+            <br />
+            <input class="inpt" type="text" name="movieTitle" id="movieTitle" />
+          </div>
+          <div>
+            <label>Movie Id</label>
+            <br />
+            <input class="inpt" type="number" name="movieId" id="movieId" />
+          </div>
+        </div>
+        <div class="flx">
+          <div>
+            <label>Movies Duration</label>
+            <br />
+            <input
+              class="inpt"
+              type="text"
+              name="movieDuration"
+              id="movieDuration"
+            />
+          </div>
+          <div>
+            <label>Movies Descripton</label
+            ><label class="validation-error hide" id="movieTitleValidationError"
+              >This field is required.</label
+            >
+            <br />
+            <input class="inpt" type="text" name="movieDesc" id="movieDesc" />
+          </div>
+        </div>
+        <div class="flx">
+          <div>
+            <label>Relese Date</label>
+            <br />
+            <input class="inpt" type="text" name="releseDate" id="releseDate" />
+          </div>
+          <div>
+            <label>Rating</label>
+            <br />
+            <input
+              class="inpt"
+              type="text"
+              name="movieRating"
+              id="movieRating"
+            />
+          </div>
+        </div>
+        <div class="flx">
+          <button
+            class="mbtn blue lf"
+            type="Submit"
+            name="Submit"
+            value="Submit"
+            id="sub"
+          >
+            Submit
+          </button>
+          <button
+            class="mbtn red rt"
+            type="reset"
+            name="Reset"
+            value="Reset"
+            id="rset"
+          >
+            Reset
+          </button>
+        </div>
+      </form>
+    </div>
+    <br />
+    <div class="employees-table">
+      <table class="list" id="moviesList">
+        <thead>
+          <tr>
+            <th>Movie Name</th>
+            <th>Movie Id</th>
+            <th>Movie Duration</th>
+            <th>Movie Description</th>
+            <th>Relese Date</th>
+            <th>Movie Rating</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
